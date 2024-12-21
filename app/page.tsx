@@ -50,9 +50,9 @@ export default function Home() {
         </p>
       </section> */}
       {/* Music Section */}
-      <section id="music" className="py-16 px-8">
+      <section id="music" className="pt-12 px-8">
         {/* <h2 className="text-3xl font-bold mb-4">Our Music</h2> */}
-        <div className="flex flex-col items-center w-">
+        <div className="flex flex-col items-center ">
           <iframe
             className="w-full max-w-[1400px] h-96"
             src="https://open.spotify.com/embed/album/45Lx2eNJPf38jW0R92U2wO?si=NCp-rIHjRNyCn0T5HzirlA"
@@ -62,23 +62,30 @@ export default function Home() {
         </div>
       </section>
       {/* Tour Dates Section */}
-      <section id="tour" className="py-16 px-8">
-        <h2 className="text-3xl font-bold mb-4">Tour Dates</h2>
+      <section
+        id="tour"
+        className="flex flex-col text-center  py-8 px-8 justify-center"
+      >
+        <h2 className="text-3xl font-bold  mb-4 font-anton">TOUR DATES</h2>
         <ul>
-          <li className="mb-2">Chicago, IL - Metro - Jan 20th</li>
-          <li className="mb-2">New York, NY - Bowery Ballroom - Feb 10th</li>
+          <li className="mb-2 border-white border-2 p-4">
+            Chicago, IL - Metro - Jan 20th
+          </li>
+          <li className="mb-2 border-white border-2 p-4">
+            New York, NY - Bowery Ballroom - Feb 10th
+          </li>
         </ul>
       </section>
       {/* Merch Section */}
-      <section id="merch" className="py-16 px-8 bg-gray-800">
+      {/* <section id="merch" className="py-4 px-8 bg-gray-800">
         <h2 className="text-3xl font-bold mb-4">Merch</h2>
         <div className="grid grid-cols-2 gap-4">
           <div className="p-4 bg-gray-700 rounded-md">T-shirt</div>
           <div className="p-4 bg-gray-700 rounded-md">Vinyl</div>
         </div>
-      </section>
+      </section> */}
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-8">
+      {/* <section id="contact" className="py-16 px-8">
         <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
         <form className="flex flex-col">
           <input
@@ -92,7 +99,7 @@ export default function Home() {
           ></textarea>
           <button className="bg-blue-500 px-6 py-2 rounded-md">Send</button>
         </form>
-      </section>
+      </section> */}
     </main>
   );
 }
