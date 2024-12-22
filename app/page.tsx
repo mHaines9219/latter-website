@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import './globals.css';
 import Link from 'next/link';
+import Hero from './components/Hero';
+import MusicPlayer from './components/MusicPlayer';
+import TourDates from './components/TourDates';
 export default function Home() {
   return (
     <main
@@ -13,29 +16,7 @@ export default function Home() {
       {/* Hero Section */}
       {/* Hero Section */}
       <section className="relative flex items-center justify-center h-screen">
-        {/* Video Background */}
-        <video
-          preload="auto"
-          loop
-          autoPlay
-          playsInline
-          muted
-          className="absolute top-0 left-0 w-full h-full object-cover"
-        >
-          <source src="/assets/1221.mov" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
-        {/* Image Overlay */}
-        <div className="relative z-10">
-          <Image
-            src="/assets/IMG_6787 2.png"
-            width={300}
-            height={300}
-            alt="Picture of the author"
-            className="opacity-90" // Adjust the transparency here
-          />
-        </div>
+        <Hero />
       </section>
       {/* About Section
       <section id="about" className="py-16 px-8">
@@ -52,29 +33,14 @@ export default function Home() {
       {/* Music Section */}
       <section id="music" className="pt-12 px-8">
         {/* <h2 className="text-3xl font-bold mb-4">Our Music</h2> */}
-        <div className="flex flex-col items-center ">
-          <iframe
-            className="w-full max-w-[1400px] h-96"
-            src="https://open.spotify.com/embed/album/45Lx2eNJPf38jW0R92U2wO?si=NCp-rIHjRNyCn0T5HzirlA"
-            frameBorder="0"
-            allow="encrypted-media"
-          ></iframe>
-        </div>
+        <MusicPlayer />
       </section>
       {/* Tour Dates Section */}
       <section
         id="tour"
         className="flex flex-col text-center  py-8 px-8 justify-center"
       >
-        <h2 className="text-3xl font-bold  mb-4 font-anton">TOUR DATES</h2>
-        <ul>
-          <li className="mb-2 border-white border-2 p-4">
-            Chicago, IL - Metro - Jan 20th
-          </li>
-          <li className="mb-2 border-white border-2 p-4">
-            New York, NY - Bowery Ballroom - Feb 10th
-          </li>
-        </ul>
+        <TourDates />
       </section>
       {/* Merch Section */}
       {/* <section id="merch" className="py-4 px-8 bg-gray-800">
