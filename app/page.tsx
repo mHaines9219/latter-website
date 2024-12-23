@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Hero from './components/Hero';
 import MusicPlayer from './components/MusicPlayer';
 import TourDates from './components/TourDates';
+import PressSection from './components/PressSection';
 export default function Home() {
   return (
     <main
@@ -41,6 +42,12 @@ export default function Home() {
         className="flex flex-col text-center  py-8 px-8 justify-center"
       >
         <TourDates />
+      </section>
+      <section
+        id="press"
+        className="flex flex-col text-center  py-8 px-8 justify-center"
+      >
+        <PressSection />
       </section>
       {/* Merch Section */}
       {/* <section id="merch" className="py-4 px-8 bg-gray-800">
