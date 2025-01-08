@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 
@@ -7,15 +8,12 @@ export default function Hero() {
       {/* Video Background */}
       <video
         preload="auto"
+        src="https://latter-site.s3.us-east-2.amazonaws.com/latter_hero.mov"
         loop
         autoPlay
-        playsInline
         muted
         className="absolute top-0 left-0 w-full h-full object-cover"
-      >
-        <source src="/assets/1221.mov" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      ></video>
 
       {/* Image Overlay */}
       <div className="relative z-10">
@@ -23,8 +21,8 @@ export default function Hero() {
           src="/assets/IMG_6787 2.png"
           width={300}
           height={300}
-          alt="Picture of the author"
-          className="opacity-90" 
+          alt="Latter band text"
+          className="opacity-90"
         />
       </div>
     </>
