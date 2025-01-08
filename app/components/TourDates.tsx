@@ -3,16 +3,16 @@ import React from 'react';
 export default function TourDates() {
   let tourDates = [
     {
-      city: 'CHICAGO, IL',
+      city: 'COMING SOON',
       venue: 'METRO',
       date: 'JAN 20TH',
     },
 
-    {
-      city: 'NEW YORK, NY',
-      venue: 'BOWERY BALLROOM',
-      date: 'FEB 10TH',
-    },
+    // {
+    //   city: 'NEW YORK, NY',
+    //   venue: 'BOWERY BALLROOM',
+    //   date: 'FEB 10TH',
+    // },
   ];
   return (
     <>
@@ -21,9 +21,10 @@ export default function TourDates() {
         {tourDates.map((tour, index) => (
           <li
             key={index}
-            className="mb-2 border-white border-2 p-4 font-anton bg-red-800 bg-opacity-50"
+            className="mb-2 border-white border-2 p-4 font-anton bg-[#005c46] bg-opacity-50"
           >
-            <div className="text-container">{`${tour.city} - ${tour.venue} - ${tour.date}`}</div>
+            {/* <div className="text-container">{`${tour.city} - ${tour.venue} - ${tour.date}`}</div> */}
+            <div className="text-container">{`${tour.city}`}</div>
           </li>
         ))}
       </ul>

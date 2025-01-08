@@ -20,15 +20,17 @@ export default function PressSection() {
       <h2 className="text-3xl font-bold mb-4 ">PRESS</h2>
       <ul>
         {pressClips.map((press, index) => (
-          <li
-            key={index}
-            className="mb-2 border-white border-2 p-4 font-anton bg-red-800 bg-opacity-50"
-          >
-            <div className="text-container">
-              <h2 className="text-3xl">{`${press.mag} `}</h2>
-              {`${press.headline}`}
-            </div>
-          </li>
+          <Link href={press.href}>
+            <li
+              key={index}
+              className="mb-2 border-white border-2 p-4 font-anton bg-[#005c46] bg-opacity-50"
+            >
+              <div className="text-container">
+                <h2 className="text-3xl">{`${press.mag} `}</h2>
+                {`${press.headline}`}
+              </div>
+            </li>
+          </Link>
         ))}
       </ul>
     </>

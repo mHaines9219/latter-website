@@ -24,7 +24,7 @@ export default function Hero() {
           width={300}
           height={300}
           alt="Picture of the author"
-          className="opacity-90" // Adjust the transparency here
+          className="opacity-90" 
         />
       </div>
     </>

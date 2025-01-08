@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import MusicPlayer from './components/MusicPlayer';
 import TourDates from './components/TourDates';
 import PressSection from './components/PressSection';
+import VideoSection from './components/VideoSection';
 export default function Home() {
   return (
     <main
@@ -15,25 +16,31 @@ export default function Home() {
       }}
     >
       {/* Hero Section */}
-      {/* Hero Section */}
       <section className="relative flex items-center justify-center h-screen">
         <Hero />
       </section>
-      {/* About Section
-      <section id="about" className="py-16 px-8">
-        <h2 className="text-3xl font-bold mb-4">About Us</h2>
-        <p className="text-lg">
-          <iframe
-            src="https://latter.bigcartel.com/products"
-            title="Online Store"
-          ></iframe>
-          We are a Chicago-based metal band blending gritty sounds with the
-          heart of the Windy City.
-        </p>
-      </section> */}
+      <section id="merch" className="  px-8 flex justify-center">
+        <Link href="https://latter.bigcartel.com/products">
+          <div className="text-[50px] py-12 md:text-[100px] font-anton bg-[#005c46] bg-opacity-50  w-screen text-center text-white transition-all duration-300 ease-in-out  hover:text-[#005c46] hover:bg-white">
+            MERCH STORE
+          </div>
+        </Link>
+      </section>
+      <section id="videos" className=" my-12 mx-4 text-center">
+        <div className="text-[40px] font-anton mb-12 md:text-[100px] ">
+          VIDEOS
+        </div>
+        <VideoSection />
+      </section>
       {/* Music Section */}
-      <section id="music" className="pt-12 px-8">
-        {/* <h2 className="text-3xl font-bold mb-4">Our Music</h2> */}
+      <section
+        id="music"
+        className=" px-8 flex flex-col justify-center items-center"
+      >
+        <div className="text-[40px] font-anton mb-12 md:text-[100px] ">
+          MUSIC
+        </div>
+
         <MusicPlayer />
       </section>
       {/* Tour Dates Section */}
@@ -45,34 +52,10 @@ export default function Home() {
       </section>
       <section
         id="press"
-        className="flex flex-col text-center  py-8 px-8 justify-center"
+        className="flex flex-col text-center   px-8 justify-center"
       >
         <PressSection />
       </section>
-      {/* Merch Section */}
-      {/* <section id="merch" className="py-4 px-8 bg-gray-800">
-        <h2 className="text-3xl font-bold mb-4">Merch</h2>
-        <div className="grid grid-cols-2 gap-4">
-          <div className="p-4 bg-gray-700 rounded-md">T-shirt</div>
-          <div className="p-4 bg-gray-700 rounded-md">Vinyl</div>
-        </div>
-      </section> */}
-      {/* Contact Section */}
-      {/* <section id="contact" className="py-16 px-8">
-        <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-        <form className="flex flex-col">
-          <input
-            className="mb-4 p-2 rounded-md bg-gray-700"
-            type="text"
-            placeholder="Your Name"
-          />
-          <textarea
-            className="mb-4 p-2 rounded-md bg-gray-700"
-            placeholder="Your Message"
-          ></textarea>
-          <button className="bg-blue-500 px-6 py-2 rounded-md">Send</button>
-        </form>
-      </section> */}
     </main>
   );
 }
