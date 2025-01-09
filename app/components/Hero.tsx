@@ -8,9 +8,10 @@ export default function Hero() {
       {/* Video Background */}
       <video
         preload="auto"
-        src="https://latter-site.s3.us-east-2.amazonaws.com/latter_hero.mov"
+        src="https://latter-site.s3.us-east-2.amazonaws.com/latter_hero.mp4"
         loop
         autoPlay
+        playsInline
         muted
         className="absolute top-0 left-0 w-full h-full object-cover"
       ></video>
