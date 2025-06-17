@@ -1,18 +1,23 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 export default function PressSection() {
   let pressClips = [
     {
-      mag: 'DECIBEL MAGAZINE',
+      mag: "NEW NOISE MAGAZINE",
+      headline: "CHICAGO'S LATTER TALK DEBUT RECORD AND GOING VIRAL",
+      href: "https://newnoisemagazine.com/interviews/interview-chicagos-latter-talk-debut-record-and-going-viral/",
+    },
+    {
+      mag: "DECIBEL MAGAZINE",
       headline: 'VIDEO PREMIERE: LATTER - "I DON`T OWE YOU',
-      href: 'https://www.decibelmagazine.com/2024/08/13/video-premiere-latter-i-dont-owe-you/',
+      href: "https://www.decibelmagazine.com/2024/08/13/video-premiere-latter-i-dont-owe-you/",
     },
 
     {
-      mag: 'PUNKNEWS.ORG',
+      mag: "PUNKNEWS.ORG",
       headline:
-        'TALKING `MY BODY IS MY SICKNESS` WITH MEREDITH HAINES OF LATTER',
-      href: 'https://www.punknews.org/article/83941/interviews-talking-my-body-is-my-sickness-with-meredith-haines-of-latter',
+        "TALKING `MY BODY IS MY SICKNESS` WITH MEREDITH HAINES OF LATTER",
+      href: "https://www.punknews.org/article/83941/interviews-talking-my-body-is-my-sickness-with-meredith-haines-of-latter",
     },
   ];
   return (
